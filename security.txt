@@ -1,0 +1,3 @@
+Contact: mailto:postmaster@jeco.cat
+Preferred-Languages: ca, en, nl
+Expires: 2026-12-31

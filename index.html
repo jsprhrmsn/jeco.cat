@@ -20,7 +20,15 @@
       justify-content: center;
       align-items: center;
 
-      background: linear-gradient(135deg, #fff4c2 0%, #e6f0ff 50%, #f2f2f2 100%);
+      background: linear-gradient(270deg, #fff4c2, #e6f0ff, #f2f2f2);
+      background-size: 600% 600%;
+      animation: gradientMove 20s ease infinite;
+    }
+
+    @keyframes gradientMove {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
     }
 
     .card {
@@ -56,6 +64,25 @@
       margin-top: 1.5rem;
       font-size: 0.8rem;
       color: #777;
+    }
+
+    /* 🌙 Dark mode */
+    @media (prefers-color-scheme: dark) {
+      body {
+        background: linear-gradient(270deg, #1a1a1a, #0f1a2b, #111);
+        background-size: 600% 600%;
+      }
+
+      .card {
+        background: #1e1e1e;
+        color: #f0f0f0;
+        box-shadow: 0 15px 40px rgba(0,0,0,0.5);
+      }
+
+      .subtitle,
+      footer {
+        color: #aaa;
+      }
     }
   </style>
 </head>

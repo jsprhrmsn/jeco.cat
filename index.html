@@ -21,27 +21,65 @@
       align-items: center;
       height: 100vh;
     }
+
     .card {
       background: white;
-      padding: 2rem 2.5rem;
-      border-radius: 12px;
-      box-shadow: 0 4px 16px rgba(0,0,0,0.1);
-      max-width: 500px;
+      padding: 2.5rem 3rem;
+      border-radius: 16px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+      max-width: 520px;
       text-align: center;
     }
+
     h1 {
-      margin-top: 0;
+      margin: 0;
+    }
+
+    .subtitle {
+      color: #666;
+      margin-bottom: 1.8rem;
+      font-size: 0.95rem;
+    }
+
+    p {
+      margin: 0.6rem 0;
+    }
+
+    .icons {
+      font-size: 1.6rem;
+      margin: 1.5rem 0;
+    }
+
+    .email {
+      font-weight: bold;
+      margin-top: 0.5rem;
+    }
+
+    footer {
+      margin-top: 1.5rem;
+      font-size: 0.8rem;
+      color: #777;
     }
   </style>
 </head>
 <body>
   <div class="card">
-    <img src="https://jsprhrmsn.github.io/jeco.cat/jeco.png" alt="jeco logo" style="max-width:350px; margin-bottom:1rem;">
-    <p>Aquest domini s’utilitza exclusivament per a correu electrònic personal.</p>
-    <p>No s’envia correu comercial ni massiu des d’aquest domini.</p>
-    <p>Per contactar amb el responsable del domini:</p>
-    <p><strong>postmaster@jeco.cat</strong></p>
-    <p>© 2026 jeco.cat</p>
+    <img src="https://jsprhrmsn.github.io/jeco.cat/jeco.png" alt="jeco logo" style="max-width:350px; margin-bottom:0.5rem;">
+
+    <div class="subtitle">Domini privat per a correu familiar</div>
+
+    <p>Domini d’ús privat per a correu electrònic personal.</p>
+    <p>No s’utilitza per a enviaments comercials<br>ni comunicacions massives.</p>
+
+    <div class="icons">📧 🏠 🔒</div>
+
+    <p>Contacte del responsable:</p>
+    <p class="email">postmaster@jeco.cat</p>
+
+    <footer>
+      © 2026 jeco.cat<br>
+      No hi ha cap web pública associada a aquest domini.
+    </footer>
   </div>
 </body>
 </html>
